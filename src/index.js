@@ -3,7 +3,7 @@
 
 module.exports = function towelSort(matrix) {
     let result_array = [];
-    if (matrix.length) {
+    if (Array.isArray(matrix) && matrix.length) {
         let sort_array = matrix.map(function (value, index, array) {
             if (index % 2) return value.reverse();
             else return value;
